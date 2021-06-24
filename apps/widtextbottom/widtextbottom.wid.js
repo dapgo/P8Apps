@@ -2,17 +2,18 @@
 run widgets in their own function scope so they don't interfere with
 currently-running apps */
 (() => {
-  const filename = 'widtextbottom.json';
+ /* const filename = 'widtextbottom.json';
   let settings = Storage.readJSON(filename,1) || {
   predtext: true,
   colors : true,
-  fontsize : 13
-};	
+  fontsize : 13 */
+};  
     
-  var text_color=0x7BE0;//Olive //0xFD20; //hex wo quotes
-  var font_size='14';//ok2
+  var text_color=0x07FF; //0x7e0;//green  //0x07FF;//cyan 
+  var font_size='13';
   g.setFontVector(font_size);  
-  var my_string="#espruino #MPL";   //"Bottom WGs area";  
+  var my_string="#espruino #MPL"; 
+                          
   //calc width out of the function
   var text_width = g.stringWidth(my_string); // width of the widget after set font
   
@@ -36,5 +37,5 @@ currently-running apps */
     width: text_width, // var with calculated  width 
     draw:draw // called to draw the widget
   };
-})()
+})();
 
