@@ -3,7 +3,7 @@
 This very basic app, displays time in the bottom area.
 It will work only with apps supporting widgets, and not overwritting the bottom area.
 
-
+Note that this widget will not work well on apps using setLCDMode("80x80"
 
 
 1st screen - 

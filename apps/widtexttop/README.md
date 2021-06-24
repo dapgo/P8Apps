@@ -2,7 +2,7 @@
 This very basic widget allows to print a text in the widget areas.
 Compatible with Bangle.js and P8+P8 expruino
 
-
+Note that this widget will not work well on apps using setLCDMode("80x80"
 
 ## Photo  
 
