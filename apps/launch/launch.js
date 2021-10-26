@@ -72,7 +72,7 @@ TC.on("touch",(p)=>{
                     if (selected!=i){
                         draw_icon(page,selected,false);
                     } else {
-                      if (D17.read()) reset(); else load(apps[page*6+i].src);
+                      if (!D17.read()) reset(); else load(apps[page*6+i].src);
                     }
                 }
                 selected=i;
@@ -85,6 +85,6 @@ TC.on("touch",(p)=>{
         selected=-1;
     }
 });
- P8.loadWidgets();    
+//  -- P8.loadWidgets();    
 
 setTimeout(()=>{drawPage(0)},1000);
